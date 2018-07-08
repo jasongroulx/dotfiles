@@ -1,6 +1,7 @@
 # Taps
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
+tap 'caskroom/versions'
 
 # Install Binaries
 brew 'bash' # Bash 4
@@ -18,7 +19,7 @@ brew 'mysql'
 brew 'node'
 
 # Apps
-cask 'alfred'
+cask 'alfred2'
 cask 'google-chrome'
 cask 'grammarly'
 cask 'sequel-pro'
