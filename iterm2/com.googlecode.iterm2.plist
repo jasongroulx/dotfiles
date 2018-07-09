@@ -39,13 +39,13 @@
 	<key>Hotkey</key>
 	<true/>
 	<key>HotkeyChar</key>
-	<integer>84</integer>
+	<integer>116</integer>
 	<key>HotkeyCode</key>
 	<integer>17</integer>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>HotkeyModifiers</key>
-	<integer>1179914</integer>
+	<integer>1310985</integer>
 	<key>JobName</key>
 	<false/>
 	<key>LoadPrefsFromCustomFolder</key>
@@ -94,9 +94,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>567 117 756 205 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>148 112 796 473 0 0 1440 900 </string>
+	<string>148 115 796 473 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>155 98 570 451 0 0 1440 900 </string>
+	<string>155 24 570 876 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -824,7 +824,7 @@
 	<key>PrefsCustomFolder</key>
 	<string>~/.dotfiles/iterm2</string>
 	<key>PromptOnQuit</key>
-	<true/>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
