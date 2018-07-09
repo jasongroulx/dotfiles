@@ -30,6 +30,7 @@ cask 'slack'
 cask 'iterm2'
 cask 'ngrok'
 cask 'anaconda'
+cask 'spotify'
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'
