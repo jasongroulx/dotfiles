@@ -38,6 +38,10 @@ npm install --global yarn
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
+brew install vim --with-override-system-vi
+brew install macvim --with-override-system-vim
+
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
