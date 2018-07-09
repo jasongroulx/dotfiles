@@ -26,6 +26,7 @@ cask 'grammarly'
 cask 'sequel-pro'
 cask 'slack'
 cask 'iterm2'
+cask 'ngrok'
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'
