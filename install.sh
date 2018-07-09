@@ -12,6 +12,9 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
+# Install useful key bindings and fuzzy completion for fzf
+$(brew --prefix)/opt/fzf/install
+
 # Make ZSH the default shell environment
 chsh -s $(which zsh)
 

@@ -12,6 +12,7 @@ brew 'tree'
 brew 'zsh'
 brew 'zsh-completions'
 brew 'z'
+brew 'fzf'
 
 # Development
 brew 'php'
