@@ -13,6 +13,7 @@ brew 'zsh'
 brew 'zsh-completions'
 brew 'z'
 brew 'fzf'
+brew 'ctags'
 
 # Development
 brew 'php'
