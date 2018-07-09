@@ -18,6 +18,8 @@ brew 'fzf'
 brew 'php'
 brew 'mysql'
 brew 'node'
+brew 'python3'
+brew 'pipenv'
 
 # Apps
 cask 'alfred2'
@@ -27,6 +29,7 @@ cask 'sequel-pro'
 cask 'slack'
 cask 'iterm2'
 cask 'ngrok'
+cask 'anaconda'
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'

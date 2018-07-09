@@ -17,3 +17,6 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Load custom commands
 export PATH="$DOTFILES/bin:$PATH"
+
+# Anaconda
+export PATH=/usr/local/anaconda3/bin:"$PATH"
