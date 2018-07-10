@@ -32,6 +32,7 @@ cask 'iterm2'
 cask 'ngrok'
 cask 'anaconda'
 cask 'spotify'
+cask 'spectacle'
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'
