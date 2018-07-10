@@ -12,6 +12,10 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
+# Setup mysql
+brew tap homebrew/services
+brew services start mysql
+
 # Install useful key bindings and fuzzy completion for fzf
 $(brew --prefix)/opt/fzf/install
 
@@ -34,10 +38,10 @@ $HOME/.composer/vendor/bin/valet install
 # Install global NPM packages
 npm install --global yarn
 
-
+# Install vim and MacVim
 brew install vim --with-override-system-vi
+brew link vim
 brew install macvim --with-override-system-vim
-
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
