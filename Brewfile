@@ -14,6 +14,7 @@ brew 'zsh-completions'
 brew 'z'
 brew 'fzf'
 brew 'ctags'
+brew 'thefuck'
 
 # Development
 brew 'php'

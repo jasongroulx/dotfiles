@@ -79,5 +79,8 @@ export LANG=en_US.UTF-8
 # Z Installation
 . `brew --prefix`/etc/profile.d/z.sh
 
-#Fzf
+# Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# The Fuck setup
+eval $(thefuck --alias)
