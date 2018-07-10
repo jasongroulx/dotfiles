@@ -34,6 +34,7 @@ cask 'anaconda'
 cask 'spotify'
 cask 'spectacle'
 cask 'karabiner-elements'
+cask 'skitch'
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'
