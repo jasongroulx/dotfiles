@@ -39,6 +39,9 @@ chflags nohidden $HOME/Library
 # Auto hide menu bar
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
+# Show Hidden Files
+defaults write com.apple.finder AppleShowAllFiles YES
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
