@@ -84,3 +84,6 @@ export LANG=en_US.UTF-8
 
 # The Fuck setup
 eval $(thefuck --alias)
+
+# Nvm
+source $(brew --prefix nvm)/nvm.sh

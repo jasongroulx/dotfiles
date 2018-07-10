@@ -16,6 +16,7 @@ brew 'fzf'
 brew 'ctags'
 brew 'thefuck'
 brew 'mycli'
+brew 'nvm'
 
 # Development
 brew 'php'
