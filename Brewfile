@@ -33,6 +33,7 @@ cask 'ngrok'
 cask 'anaconda'
 cask 'spotify'
 cask 'spectacle'
+cask 'karabiner-elements'
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'
