@@ -21,4 +21,5 @@ ln -sf ~/.dotfiles/Spectacle/Shortcuts.json ~/Library/Application\ Support/Spect
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 ln -sf ~/.dotfiles/.nvmrc ~/.nvmrc
+ln -sf ~/.dotfiles/.my.cnf ~/.my.cnf
 ln -sf ~/.dotfiles/karabiner/karabiner.json ~/.config/karabiner
