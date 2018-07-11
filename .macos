@@ -60,6 +60,9 @@ defaults write com.apple.dock static-only -bool true
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+# Move the Dock Position
+defaults write com.apple.dock orientation -string right
+
 # Hot corners
 # Possible values:
 #  0: no-op
