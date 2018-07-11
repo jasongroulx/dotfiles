@@ -36,11 +36,13 @@ mv composer.phar /usr/local/bin/composer
 $HOME/.composer/vendor/bin/valet install
 
 # Install global NPM packages
-npm install --global yarn
+npm install --global yarn sass
+
+# Install nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
 # Install vim and MacVim
 brew install vim --with-override-system-vi
-brew link vim
 brew install macvim --with-override-system-vim
 
 # Set macOS preferences
