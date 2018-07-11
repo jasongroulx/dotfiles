@@ -1,0 +1,5 @@
+[user]
+	name = Jason Groulx
+	email = groulx.jason@gmail.com
+[core]
+	excludesfile = /Users/jasongroulx/.dotfiles/.gitignore_global
