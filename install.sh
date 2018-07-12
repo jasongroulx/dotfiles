@@ -45,6 +45,9 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 brew install vim --with-override-system-vi
 brew install macvim --with-override-system-vim
 
+# Install Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
