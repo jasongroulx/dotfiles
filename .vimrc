@@ -1,5 +1,11 @@
 set nocompatible
 
+" Added this to avoid `the imp module is deprecated` warning
+" https://github.com/vim/vim/issues/3117#issuecomment-402622616
+if has('python3')
+  silent! python3 1
+endif
+
 so ~/.dotfiles/.vim/plugings.vim
 
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
