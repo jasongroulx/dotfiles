@@ -19,7 +19,7 @@ brew 'mycli'
 brew 'nvm'
 
 # Development
-brew 'php'
+brew 'php@7.1'
 brew 'mysql'
 brew 'node'
 brew 'python3'
