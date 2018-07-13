@@ -33,17 +33,20 @@ set noerrorbells visualbell t_vb=
 " Add spell checking and automatic wrapping at the recommended 72 columns to you commit messages.
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
-
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
 endif
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
+
+" Map leader key to , instead of the default \
+let mapleader = "\<Space>"
 
 "-------------------Visuals----------------------------------------------------"
 set background=dark
