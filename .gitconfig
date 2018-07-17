@@ -3,3 +3,5 @@
 	email = groulx.jason@gmail.com
 [core]
 	excludesfile = /Users/jasongroulx/.dotfiles/.gitignore_global
+[pager]
+    branch = false
