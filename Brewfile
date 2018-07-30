@@ -20,7 +20,7 @@ brew 'nvm'
 
 # Development
 brew 'php@7.1'
-brew 'mysql'
+brew 'mysql@5.7'
 brew 'node'
 brew 'python3'
 brew 'pipenv'

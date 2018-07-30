@@ -20,3 +20,6 @@ export PATH="$DOTFILES/bin:$PATH"
 
 # Anaconda
 export PATH=/usr/local/anaconda3/bin:"$PATH"
+
+#MySQL
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
