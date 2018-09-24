@@ -14,7 +14,7 @@ brew bundle
 
 # Setup mysql
 brew tap homebrew/services
-brew services start mysql
+brew services start mysql@5.7
 
 # Install useful key bindings and fuzzy completion for fzf
 $(brew --prefix)/opt/fzf/install
