@@ -20,7 +20,7 @@ brew 'nvm'
 brew 'wget'
 
 # Development
-brew 'php@7.1'
+brew 'php@7.2'
 brew 'mysql@5.7'
 brew 'node'
 brew 'python3'
