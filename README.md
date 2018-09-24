@@ -10,3 +10,6 @@
 * Clone this repo to ~/.dotfiles
 * Append /usr/local/bin/zsh to the end of your /etc/shells file
 * Run install.sh to start the installation
+
+### Resources
+* [Dries Vints's Dotfiles](https://github.com/driesvints/dotfiles)
