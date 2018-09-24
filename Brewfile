@@ -17,6 +17,7 @@ brew 'ctags'
 brew 'thefuck'
 brew 'mycli'
 brew 'nvm'
+brew 'wget'
 
 # Development
 brew 'php@7.1'
