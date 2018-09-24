@@ -9,7 +9,8 @@
 * Copy your public and private SSH keys to ~/.ssh and make sure they're set to 600
 * Clone this repo to ~/.dotfiles
 * Append /usr/local/bin/zsh to the end of your /etc/shells file
-* Run install.sh to start the installation
+* Run `install.sh` to start the installation
+* Run `symlinks.sh`
 
 ### Resources
 * [Dries Vints's Dotfiles](https://github.com/driesvints/dotfiles)
