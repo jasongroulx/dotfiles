@@ -34,6 +34,8 @@ mv composer.phar /usr/local/bin/composer
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
+mkdir ~/code
+valet park ~/code
 
 # Install global NPM packages
 npm install --global yarn sass
