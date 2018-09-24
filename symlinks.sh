@@ -23,7 +23,7 @@ mkdir -p ~/.vim/colors
 #==============
 # Create symlinks
 #==============
-ln -sf ~/.dotfiles/Spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle
+ln -sf ~/.dotfiles/Spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
