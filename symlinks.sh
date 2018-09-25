@@ -19,6 +19,7 @@ sudo rm -rf ~/.config/karabiner/karabiner.json > /dev/null 2>&1
 # Create folders
 #==============
 mkdir -p ~/.vim/colors
+mkdir -p ~/Library/Application\ Support/Spectacle/
 
 #==============
 # Create symlinks
