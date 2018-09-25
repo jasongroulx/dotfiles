@@ -18,6 +18,7 @@ brew 'thefuck'
 brew 'mycli'
 brew 'nvm'
 brew 'wget'
+brew 'the_silver_searcher'
 
 # Development
 brew 'php@7.2'
