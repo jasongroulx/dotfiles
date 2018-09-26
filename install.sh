@@ -48,8 +48,9 @@ brew install vim --with-override-system-vi
 brew install macvim --with-override-system-vim
 brew link --overwrite macvim
 
-# Install Vundle
+# Install Vundle and install plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim -c VundleUpdate -c quitall
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
