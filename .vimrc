@@ -6,6 +6,7 @@ if has('python3')
   silent! python3 1
 endif
 
+set rtp+=~/.fzf
 so ~/.dotfiles/.vim/plugings.vim
 
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]

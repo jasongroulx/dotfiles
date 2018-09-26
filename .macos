@@ -90,6 +90,14 @@ defaults write com.apple.Safari UniversalSearchEnabled -bool false
 defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 
 ###############################################################################
+# Spectacle.app                                                               #
+###############################################################################
+
+# Set up my preferred keyboard shortcuts
+mkdir -p  ~/Library/Application\ Support/Spectacle
+cp -r ./Spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
+
+###############################################################################
 # Terminal & iTerm 2                                                          #
 ###############################################################################
 
