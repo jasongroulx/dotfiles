@@ -38,6 +38,7 @@ Plugin 'junegunn/limelight.vim'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'w0rp/ale'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

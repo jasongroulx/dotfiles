@@ -40,6 +40,9 @@ valet park ~/code
 # Install global NPM packages
 npm install --global yarn sass
 
+# Install global python packages
+pip install yapf
+
 # Install nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
