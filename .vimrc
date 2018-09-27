@@ -108,6 +108,11 @@ inoremap <right> <nop>
 
 "-------------------Plugings---------------------------------------------------"
 "/
+"/ vim-snippets
+"/
+let g:ultisnips_python_style = "google"
+
+"/
 "/ vim-easy-align
 "/
 " Start interactive EasyAlign in visual mode (e.g. vipga)
