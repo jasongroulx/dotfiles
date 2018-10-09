@@ -14,3 +14,4 @@
 
 ### Resources
 * [Dries Vints's Dotfiles](https://github.com/driesvints/dotfiles)
+* [Change Macos User Preferences Via Command Line](https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/)
