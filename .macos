@@ -19,6 +19,19 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 13
 defaults write -g com.apple.swipescrolldirection -bool NO
 
+# Remove OSX spotlight keyboard shortcut
+# https://superuser.com/a/1211170
+/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c \
+  "Set AppleSymbolicHotKeys:64:enabled false"
+
+################################################################################
+# Alfred
+###############################################################################
+
+# Set sync folder
+mkdir -p  ~/.dotfiles/alfred
+defaults write com.runningwithcrayons.Alfred-Preferences syncfolder -string "~/.dotfiles/alfred"
+
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
@@ -123,4 +136,3 @@ for app in "Dock" "Finder" "Safari" "SystemUIServer" \
 done
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
-
