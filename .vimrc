@@ -157,7 +157,7 @@ let g:limelight_conceal_ctermfg = 'black'
 "/
 "/ FZF
 "/
-map <C-p> :FZF<CR>
+map <C-p> :Ag<CR>
 
 
 "/
