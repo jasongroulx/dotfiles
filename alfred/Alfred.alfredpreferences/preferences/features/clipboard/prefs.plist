@@ -2,14 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>default</key>
+	<key>hotkey</key>
 	<dict>
 		<key>key</key>
-		<integer>49</integer>
+		<integer>9</integer>
 		<key>mod</key>
-		<integer>3222274048</integer>
+		<integer>1179648</integer>
 		<key>string</key>
-		<string>Space</string>
+		<string>V</string>
 	</dict>
+	<key>persistFor</key>
+	<integer>1</integer>
 </dict>
 </plist>
