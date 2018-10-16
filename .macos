@@ -111,6 +111,16 @@ mkdir -p  ~/Library/Application\ Support/Spectacle
 cp -r ./Spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
 
 ###############################################################################
+# Accessibility Settings
+###############################################################################
+
+# Read selected text HotKey
+defaults write com.apple.speech.synthesis.general.prefs SpokenUIUseSpeakingHotKeyFlag -bool true
+defaults write com.apple.speech.synthesis.general.prefs SpokenUIUseSpeakingHotKeyCombo -int 2604
+defaults write com.apple.speech.voice.prefs SelectedVoiceCreator -int 1886745202
+defaults write com.apple.speech.voice.prefs SelectedVoiceID -int 184844483
+
+###############################################################################
 # Terminal & iTerm 2                                                          #
 ###############################################################################
 
