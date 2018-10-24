@@ -19,6 +19,7 @@ brew 'mycli'
 brew 'nvm'
 brew 'wget'
 brew 'the_silver_searcher'
+brew 'httpie'
 
 # Development
 brew 'php@7.2'
