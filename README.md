@@ -13,7 +13,6 @@
 * Clone this repo to ~/.dotfiles
 * Append /usr/local/bin/zsh to the end of your /etc/shells file
 * Run `install.sh` to start the installation
-* Run `symlinks.sh`
 
 ### Resources
 * [Dries Vints's Dotfiles](https://github.com/driesvints/dotfiles)
