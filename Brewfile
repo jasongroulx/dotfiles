@@ -44,6 +44,7 @@ cask 'spotify'
 cask 'spectacle'
 cask 'karabiner-elements'
 cask 'skitch'
+cask 'licecap'
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'
