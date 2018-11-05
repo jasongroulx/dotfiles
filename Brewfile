@@ -25,7 +25,6 @@ brew 'httpie'
 brew 'php@7.2'
 brew 'mysql@5.7'
 brew 'node'
-brew 'python3'
 
 # Apps
 cask 'alfred2'
