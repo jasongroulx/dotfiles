@@ -76,6 +76,7 @@ brew link --overwrite macvim
 
 sudo rm -rf ~/.vimrc > /dev/null 2>&1
 mkdir -p ~/.vim/colors
+ln -sf ~/.dotfiles/.vim/snippets ~/.vim
 ln -sf ~/.dotfiles/.vim/colors/solarized.vim ~/.vim/colors
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 
