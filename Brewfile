@@ -2,6 +2,7 @@
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
+tap 'gwerbin/tap'
 
 # Install Binaries
 brew 'bash' # Bash 4
@@ -25,6 +26,7 @@ brew 'httpie'
 brew 'php@7.2'
 brew 'mysql@5.7'
 brew 'node'
+cask 'gwerbin/tap/sqlcheck'
 
 # Apps
 cask 'alfred2'
