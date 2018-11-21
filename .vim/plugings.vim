@@ -36,9 +36,11 @@ Plugin 'tpope/vim-commentary'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'junegunn/vim-peekaboo'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'w0rp/ale'
+Plugin 'christoomey/vim-run-interactive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

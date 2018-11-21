@@ -127,6 +127,12 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
+nmap <Leader><Leader>a :EasyAlignFileOnRegex<Space>
+let g:easy_align_ignore_groups = []
+function! EasyAlignFileOnRegex(regex)
+    execute '%EasyAlign /' . a:regex . '/'
+endfunction
+command! -nargs=1 EasyAlignFileOnRegex call EasyAlignFileOnRegex(<q-args>)
 
 "/
 "/ Limelight
