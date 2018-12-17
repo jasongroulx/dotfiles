@@ -46,6 +46,7 @@ cask 'spectacle'
 cask 'karabiner-elements'
 cask 'skitch'
 cask 'licecap'
+cask 'postman'
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'
