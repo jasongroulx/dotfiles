@@ -80,6 +80,9 @@ ln -sf ~/.dotfiles/.vim/snippets ~/.vim
 ln -sf ~/.dotfiles/.vim/colors/solarized.vim ~/.vim/colors
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 
+# Need to run this to have MacVim have the proper $PATH (https://bit.ly/2Rox33r)
+ln -s ~/.zshrc ~/.zprofile
+
 # Install Vundle and install plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim -c VundleUpdate -c quitall
