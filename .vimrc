@@ -129,6 +129,7 @@ nmap ga <Plug>(EasyAlign)
 
 nmap <Leader><Leader>a :EasyAlignFileOnRegex<Space>
 let g:easy_align_ignore_groups = []
+
 function! EasyAlignFileOnRegex(regex)
     execute '%EasyAlign /' . a:regex . '/'
 endfunction
