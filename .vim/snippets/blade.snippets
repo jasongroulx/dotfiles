@@ -1,0 +1,30 @@
+snippet @if
+	@if(${1})
+	@endif
+snippet @for
+	@foreach(${1} as ${2})
+		${3}
+	@endforeach
+	
+snippet {{
+	{{ $${1} }}
+snippet dd
+	{{ dd(${1}) }}
+snippet BFo
+	{!! BootForm::open()->action(${1}) !!}
+snippet BFc
+	{!! BootForm::close() !!}
+snippet BFt
+	{!! BootForm::text('${1}', '${2}') !!}
+snippet BFcb
+	{!! BootForm::checkbox('${1}', '${2}') !!}
+snippet BFs
+	{!! BootForm::submit('${1}')->addClass('btn-primary')->removeClass('btn-default') !!}
+snippet BFd
+	{!! BootForm::select('${1}', '${2}')->options(${3}) !!}
+snippet BFh
+	{!! BootForm::hidden('${1}')->value('${2}') !!}
+snippet ldbm
+	{{ \Debugbar::startMeasure('${1}', '$1') }}
+		${VISUAL}
+	{{ \Debugbar::stopMeasure('$1') }}

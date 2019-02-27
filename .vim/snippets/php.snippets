@@ -1,0 +1,36 @@
+snippet met
+	public function ${1}()
+	{
+		${2}
+	}
+snippet pmet
+	private function ${1}()
+	{
+		${2}
+	}
+snippet $
+	$this->${1}
+snippet re
+	return ${1}
+snippet relv
+	return view('${1}', compact('${2}'));
+snippet relr
+	return redirect(route('${1}', ${2}));
+snippet fore
+	foreach (${1} as $key => $value) {
+		${2}
+	}
+snippet dd
+	dd(${1})
+snippet =>
+	'${1}' => $${2},
+snippet if
+	if(${1}){
+		${2}
+	}
+snippet lrr
+	Route::resource('${1}', '${2}');
+snippet ldbm
+	\Debugbar::startMeasure('${1}', '$1');
+		${VISUAL}
+	\Debugbar::stopMeasure('$1');
