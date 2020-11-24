@@ -82,6 +82,14 @@ export LANG=en_US.UTF-8
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# fbr - checkout git branch
+fbr() {
+  local branches branch
+  branches=$(git --no-pager branch -vv) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}
+
 # The Fuck setup
 eval $(thefuck --alias)
 
@@ -95,3 +103,10 @@ function in() {(
   z $1
   eval ${@:2}
 )}
+
+# Add flutter to $PATH
+export PATH="$PATH:$HOME/code/flutter/bin"
+
+# Git tab completion
+# https://stackoverflow.com/a/58517668/13520068
+autoload -Uz compinit && compinit

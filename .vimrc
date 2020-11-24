@@ -1,5 +1,6 @@
 set nocompatible
 
+
 " Added this to avoid `the imp module is deprecated` warning
 " https://github.com/vim/vim/issues/3117#issuecomment-402622616
 if has('python3')
@@ -8,6 +9,9 @@ endif
 
 set rtp+=~/.fzf
 so ~/.dotfiles/.vim/plugings.vim
+
+" Yeah, it's a package, but it comes with vim
+packadd! matchit
 
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 set backspace=indent,eol,start
@@ -107,6 +111,18 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 
 "-------------------Plugings---------------------------------------------------"
+" Dart / Flutter - dart-lang/dart-vim-plugin
+let g:dart_style_guide = 2
+let g:dart_format_on_save = 1
+
+" ansible-vim
+autocmd FileType yaml setlocal ai ts=2 sw=2 et
+
+augroup ansible_vim_fthosts
+  autocmd!
+  autocmd BufNewFile,BufRead hosts setfiletype yaml.ansible
+augroup END
+
 " ALE (Asynchronous Lint Engine)
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
@@ -117,7 +133,7 @@ let g:ale_fixers = {
 "/
 "/ vim-snippets
 "/
-let g:ultisnips_python_style = "google"
+let g:ultisnips_python_style = "sphinx"
 
 "/
 "/ vim-easy-align
@@ -164,7 +180,35 @@ let g:limelight_conceal_ctermfg = 'black'
 "/
 "/ FZF
 "/
+" Make :Ag not match file names, only the file content
+" https://github.com/junegunn/fzf.vim/issues/346#issuecomment-288483704
+" command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0)
+
 map <C-p> :Ag<CR>
+" add this function to your .vimrc
+function! s:build_quickfix_list(lines)
+    call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+    copen
+    cc
+endfunction
+
+" When using `dd` in the quickfix list, remove the item from the quickfix list.
+function! RemoveQFItem()
+    let curqfidx = line('.') - 1
+    let qfall = getqflist()
+    call remove(qfall, curqfidx)
+    call setqflist(qfall, 'r')
+    execute curqfidx + 1 . "cfirst"
+    :copen
+endfunction
+:command! RemoveQFItem :call RemoveQFItem()
+" Use map <buffer> to only map dd in the quickfix window. Requires +localmap
+autocmd FileType qf map <buffer> dd :RemoveQFItem<cr>
+
+" map it to an fzf keybind/action:
+let g:fzf_action = {
+            \ 'enter': function('s:build_quickfix_list')
+            \ }
 
 
 "/
