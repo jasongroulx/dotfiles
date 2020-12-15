@@ -1,0 +1,62 @@
+###############################################################################
+# Finder                                                                      #
+###############################################################################
+
+# Finder: show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Show the ~/Library folder
+chflags nohidden $HOME/Library
+
+# Auto hide menu bar
+defaults write NSGlobalDomain _HIHideMenuBar -bool true
+
+# Show Hidden Files
+defaults write com.apple.finder AppleShowAllFiles YES
+
+# Hide All The Icons On Your Desktop
+defaults write com.apple.finder CreateDesktop false
+
+###############################################################################
+# Dock, Dashboard, and hot corners                                            #
+###############################################################################
+
+# Wipe all (default) app icons from the Dock
+# This is only really useful when setting up a new Mac, or if you don’t use
+# the Dock to launch apps.
+defaults write com.apple.dock persistent-apps -array
+
+# Show only open applications in the Dock
+defaults write com.apple.dock static-only -bool true
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+# Move the Dock Position
+defaults write com.apple.dock orientation -string right
+
+# Hot corners
+# Possible values:
+#  0: no-op
+#  2: Mission Control
+#  3: Show application windows
+#  4: Desktop
+#  5: Start screen saver
+#  6: Disable screen saver
+#  7: Dashboard
+# 10: Put display to sleep
+# 11: Launchpad
+# 12: Notification Center
+
+# Bottom left screen corner → Put display to sleep
+defaults write com.apple.dock wvous-bl-corner -int 10
+defaults write com.apple.dock wvous-bl-modifier -int 0
+
+###############################################################################
+# Kill affected applications                                                  #
+###############################################################################
+
+for app in "Dock" "Finder" "SystemUIServer" \
+    "Terminal"; do
+    killall "${app}" &> /dev/null
+done

@@ -1,10 +1,53 @@
 - clean: ['~']
 
-- link:
+- shell:
+  - description: Validating sudo credentials
+    command: "sudo --validate"
 
+- brewfile: 
+    - Brewfile
 
-- clean: ['~']
+- create:
+    - ~/Developer
+    - ~/Library/Application\ Support/Spectacle
 
-- link:
+- link: 
+    ~/.vimrc: vim/vimrc
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
+    ~/.zshrc: zshrc
+    ~/.my.cnf: my.cnf
+    ~/Library/Application Support/Spectacle/Shortcuts.json: spectacle/Shortcuts.json
 
+- shell: 
+    - command: "[ -d ~/.oh-my-zsh ] || sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\" --unattended"
+      stdin: true
+      stdout: true
+      description: Install Oh My Zsh
 
+    - command: "[[ \"$(ag $(which zsh) /etc/shells)\" ]] || sudo sh -c \"echo $(which zsh) >> /etc/shells\""
+      description: Adding zsh to list of acceptable shells
+
+    - command: "sudo chsh -s $(which zsh)"
+      description: Making zsh the default shell
+
+    - command: composer global require laravel/valet
+      description: Downloading Laravel Valet
+
+    - command: sudo valet install
+      description: Configuring and installing Laravel Valet and DnsMasq
+
+    - command: composer global require laravel/installer
+      description: Downloading Laravel installer
+
+    - description: Installing vim-plug
+      command: "[ -f ~/.vim/autoload/plug.vim ] || curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+
+    - description: Installing vim plugins
+      command: "vim +PlugInstall +qa"
+
+    - description: Install the virtualenv tool with pip
+      command: pip install virtualenv
+
+    - description: Update MacOS settings
+      command: source $HOME/.dotfiles/macos
