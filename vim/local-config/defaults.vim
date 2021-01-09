@@ -36,9 +36,6 @@ if has('mouse')
   set mouse=a
 endif
 
-" Map leader key to , instead of the default \
-let mapleader = "\<Space>"
-
 set clipboard=unnamed
 
 

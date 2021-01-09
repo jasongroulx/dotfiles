@@ -74,7 +74,7 @@ ZSH_DISABLE_COMPFIX=true
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git git-prompt vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -122,6 +122,17 @@ source "/usr/local/opt/fzf/shell/key-bindings.zsh"
 alias composer1="composer self-update --1 && composer --version"
 alias composer2="composer self-update --2 && composer --version"
 
-# Set Python 3 as default
-alias python=/usr/local/bin/python3
-alias pip=/usr/local/bin/pip3
+# Open vim with z argument
+v() {
+  if [ -n "$1" ]; then
+    z $1
+  fi
+
+  vim
+}
+
+# Compile bundles and source zshrc
+so() {
+  source ~/.zshrc
+  echo 'Sourced zshrc'
+}
