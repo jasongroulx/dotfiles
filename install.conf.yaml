@@ -3,16 +3,19 @@
 - shell:
   - description: Validating sudo credentials
     command: "sudo --validate"
+  - description: Install Homebrew
+    command: "[ -x \"$(which brew)\" ] || /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
 
 - brewfile: 
     - Brewfile
 
 - create:
-    - ~/Developer
-    - ~/Library/Application\ Support/Spectacle
+    - ~/Code
+    - ~/.vim/colors
+    - ~/Library/Application Support/Spectacle
 
 - link: 
-    ~/.vimrc: vim/vimrc
+    ~/.vim/colors/solarized.vim: vim/solarized.vim
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.zshrc: zshrc
@@ -20,7 +23,7 @@
     ~/Library/Application Support/Spectacle/Shortcuts.json: spectacle/Shortcuts.json
 
 - shell: 
-    - command: "[ -d ~/.oh-my-zsh ] || sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\" --unattended"
+    - command: "[ -d ~/.oh-my-zsh ] || sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\" --unattended --keep-zshrc"
       stdin: true
       stdout: true
       description: Install Oh My Zsh
@@ -45,9 +48,6 @@
 
     - description: Installing vim plugins
       command: "vim +PlugInstall +qa"
-
-    - description: Install the virtualenv tool with pip
-      command: pip install virtualenv
 
     - description: Update MacOS settings
       command: source $HOME/.dotfiles/macos
