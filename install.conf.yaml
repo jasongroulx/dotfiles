@@ -15,6 +15,7 @@
     - ~/Library/Application Support/Spectacle
 
 - link: 
+    ~/.vimrc: vim/vimrc
     ~/.vim/colors/solarized.vim: vim/solarized.vim
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
@@ -23,7 +24,7 @@
     ~/Library/Application Support/Spectacle/Shortcuts.json: spectacle/Shortcuts.json
 
 - shell: 
-    - command: "[ -d ~/.oh-my-zsh ] || sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\" --unattended --keep-zshrc"
+    - command: "[ -d ~/.oh-my-zsh ] || sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\" --silent --unattended --keep-zshrc"
       stdin: true
       stdout: true
       description: Install Oh My Zsh

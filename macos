@@ -52,11 +52,3 @@ defaults write com.apple.dock orientation -string right
 defaults write com.apple.dock wvous-bl-corner -int 10
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
-###############################################################################
-# Kill affected applications                                                  #
-###############################################################################
-
-for app in "Dock" "Finder" "SystemUIServer" \
-    "Terminal"; do
-    killall "${app}" &> /dev/null
-done
