@@ -16,6 +16,9 @@ Plug 'jesseleite/vim-agriculture'
 
 " Automatic search highlight clearing
 Plug 'jesseleite/vim-noh'
+"
+" Vim plugin to help users organize their vimrc configs
+Plug 'jesseleite/vim-sourcery'
 
 " Git wrapper
 Plug 'tpope/vim-fugitive'
@@ -40,3 +43,6 @@ Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn r
 
 " A Vim wrapper for running tests on different granularities.
 Plug 'vim-test/vim-test'
+
+" Comment stuff out
+Plug 'tpope/vim-commentary'

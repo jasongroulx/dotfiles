@@ -98,6 +98,8 @@ source $ZSH/oh-my-zsh.sh
 # Z Installation
 . `brew --prefix`/etc/profile.d/z.sh
 
+# MySQL
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 # ------------------------------------------------------------------------------
 # Fzf Installer Generated Config
 # ------------------------------------------------------------------------------
@@ -121,6 +123,10 @@ source "/usr/local/opt/fzf/shell/key-bindings.zsh"
 # Switch Composer Versions
 alias composer1="composer self-update --1 && composer --version"
 alias composer2="composer self-update --2 && composer --version"
+
+# Laravel Sail
+alias sail="./vendor/bin/sail"
+
 
 # Open vim with z argument
 v() {

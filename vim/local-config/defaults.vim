@@ -44,7 +44,7 @@ set clipboard=unnamed
 " ------------------------------------------------------------------------------
 set background=dark
 colorscheme solarized
-set colorcolumn=120       " display a ruler at a specific line
+set colorcolumn=80       " display a ruler at a specific line
 set t_Co=256              " enable 256-color mode.
 
 " remove the scroll bars in macvim
@@ -83,3 +83,5 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+
