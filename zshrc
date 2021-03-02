@@ -80,6 +80,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+source ~/.dotfile-env
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -137,8 +139,6 @@ v() {
 
   vim
 }
-
-source .env
 
 # Compile bundles and source zshrc
 so() {

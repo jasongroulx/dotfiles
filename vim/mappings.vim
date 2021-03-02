@@ -19,7 +19,7 @@ nmap <Leader>s :Filetypes<CR>
 nmap <Leader>S :Snippets<CR>
 nmap <Leader><Leader>h :Helptags!<CR>
 
-" Agriculture
+" Mappings: agriculture
 nmap <Leader>/ <Plug>AgRawSearch
 vmap <Leader>/ <Plug>AgRawVisualSelection
 nmap <Leader>* <Plug>AgRawWordUnderCursor
@@ -56,14 +56,21 @@ nmap <Leader>rn :w<CR>:TestNearest<CR>
 nmap <Leader>rv :w<CR>:TestVisit<CR>
 
 " Generic LSP intelligence
-" Plugin: coc
+" Mappings: coc
 nmap <silent> <Leader>ig <Plug>(coc-definition)
 nmap <silent> <Leader>iv :vsplit<CR><Plug>(coc-definition)
 nmap <silent> <Leader>it <Plug>(coc-type-definition)
 inoremap <silent><expr> <C-l> coc#refresh()
 
 " PHP intelligence
-" Plugin: phpactor
+" Mappings: phpactor
 autocmd FileType php nnoremap <buffer> <Leader>p :call phpactor#ContextMenu()<CR>
 autocmd FileType php nnoremap <buffer> <Leader>pi :call phpactor#UseAdd()<CR>
 autocmd FileType php nnoremap <buffer> <Leader>pt :call phpactor#Transform()<CR>
+
+" Mappings: sourcery
+function! SourceryMappings()
+  nmap <buffer> <leader>gc <Plug>SourceryGoToRelatedConfig
+  nmap <buffer> <leader>gm <Plug>SourceryGoToRelatedMappings
+  nmap <buffer> <leader>gp <Plug>SourceryGoToRelatedPluginDefinition
+endfunction

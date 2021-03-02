@@ -16,7 +16,6 @@
     - Brewfile
 
 - create:
-    - ~/.dotfile-env
     - ~/Code
     - ~/.vim/colors
     - ~/Library/Application Support/Spectacle
@@ -33,7 +32,7 @@
 
 - shell: 
     - description: Adding .env variable for vim config
-      command: echo 'VIM_INSTALL=~/.vim' >> ../.dotfile-env && echo 'DOTFILES=~/.dotfiles' >> ../.dotfile-env
+      command: [ -f ~/.dotfile-env ] || touch ~/.dotfile-env && echo 'export VIM_INSTALL=~/.vim' >> ~/.dotfile-env && echo 'export DOTFILES=~/.dotfiles' >> ~/.dotfile-env
 
     - command: "[ -d ~/.oh-my-zsh ] || sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\" --silent --unattended --keep-zshrc"
       stdin: true

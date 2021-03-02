@@ -50,4 +50,4 @@ Plug 'vim-test/vim-test'
 Plug 'tpope/vim-commentary'
 
 " PHP refactoring and introspection
-Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install', 'branch': 'develop'}
+Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
