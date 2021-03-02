@@ -15,6 +15,7 @@ brew 'composer'
 brew 'redis'
 brew 'node'
 brew 'yarn'
+brew 'vim'
 
 cask 'keycastr'
 cask 'github'

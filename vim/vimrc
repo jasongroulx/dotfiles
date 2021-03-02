@@ -11,9 +11,21 @@ silent! source $VIMRUNTIME/defaults.vim
 " # Sourcing
 " ------------------------------------------------------------------------------
 
+" You could set these up from environment variables
+let g:sourcery#system_vimfiles_path = $VIM_INSTALL
+let g:sourcery#vim_dotfiles_path = $DOTFILES . '/vim'
+
+" This tells Vim to use our custom `jason-vim-install` path as our first runtime path, instead of .vim
+execute 'set runtimepath=' . g:sourcery#system_vimfiles_path . ',$VIMRUNTIME'
+
 " Source plugins
-call plug#begin('~/.vim/plugged')
-  source ~/.dotfiles/vim/plugins.vim
+call plug#begin(g:sourcery#system_vimfiles_path . '/plugged')
+  execute 'source ' . g:sourcery#vim_dotfiles_path . '/plugins.vim'
 call plug#end()
 
-call sourcery#source()
+" These two lines are not needed if you combine them into a single `config` folder!
+call sourcery#source_path('local-config')
+call sourcery#source_path('plugin-config')
+
+" Source everything else
+call sourcery#init()

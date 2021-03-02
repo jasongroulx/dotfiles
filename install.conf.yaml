@@ -1,3 +1,9 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
 - clean: ['~']
 
 - shell:
@@ -10,13 +16,15 @@
     - Brewfile
 
 - create:
+    - ~/.dotfile-env
     - ~/Code
     - ~/.vim/colors
     - ~/Library/Application Support/Spectacle
 
 - link: 
     ~/.vimrc: vim/vimrc
-    ~/.vim/colors/solarized.vim: vim/solarized.vim
+    ~/.vim/coc-settings.json: vim/coc-settings.json
+    ~/.vim/colors: vim/colors
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.zshrc: zshrc
@@ -24,6 +32,9 @@
     ~/Library/Application Support/Spectacle/Shortcuts.json: spectacle/Shortcuts.json
 
 - shell: 
+    - description: Adding .env variable for vim config
+      command: echo 'VIM_INSTALL=~/.vim' >> ../.dotfile-env && echo 'DOTFILES=~/.dotfiles' >> ../.dotfile-env
+
     - command: "[ -d ~/.oh-my-zsh ] || sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\" --silent --unattended --keep-zshrc"
       stdin: true
       stdout: true
@@ -52,3 +63,4 @@
 
     - description: Update MacOS settings
       command: source $HOME/.dotfiles/macos
+

@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 # MySQL
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
 # ------------------------------------------------------------------------------
 # Fzf Installer Generated Config
 # ------------------------------------------------------------------------------
@@ -136,6 +137,8 @@ v() {
 
   vim
 }
+
+source .env
 
 # Compile bundles and source zshrc
 so() {

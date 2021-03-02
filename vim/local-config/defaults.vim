@@ -21,6 +21,7 @@ set showmatch             " highlight matching [{()}]
 set spell
 set autowriteall          " automatically write file when switching buffers.
 set complete=.,w,b,u      " Set our desired autocompletion matching.
+set completeopt=menu,menuone,noinsert,noselect " Auto complete menu options
 "No damn bells!
 set noerrorbells visualbell t_vb=
 
@@ -75,13 +76,13 @@ nmap <C-L> <C-W><C-L>
 
 " Causes each of the arrow keys to execute no operation,
 " or in other words: it disables them.
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+" nnoremap <Left> :echoe "Use h"<CR>
+" nnoremap <Right> :echoe "Use l"<CR>
+" nnoremap <Up> :echoe "Use k"<CR>
+" nnoremap <Down> :echoe "Use j"<CR>
+" inoremap <up> <nop>
+" inoremap <down> <nop>
+" inoremap <left> <nop>
+" inoremap <right> <nop>
 
 

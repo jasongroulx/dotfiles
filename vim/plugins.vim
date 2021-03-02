@@ -1,6 +1,8 @@
 " ------------------------------------------------------------------------------
 " # Installed Plugins
 " ------------------------------------------------------------------------------
+" LSP Client
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " HTML/CSS expand abbreviation magic
 Plug 'mattn/emmet-vim'
@@ -46,3 +48,6 @@ Plug 'vim-test/vim-test'
 
 " Comment stuff out
 Plug 'tpope/vim-commentary'
+
+" PHP refactoring and introspection
+Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install', 'branch': 'develop'}

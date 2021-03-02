@@ -1,0 +1,25 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean: ['~']
+
+
+- create:
+    - ../.dotfile-env
+    - ../vim-install
+
+- link:
+    ../vim-install/colors: vim/colors
+
+- shell: 
+    - description: Adding .env variable for vim config
+      command: echo 'VIM_INSTALL=../vim-install' >> ../.dotfile-env && echo 'DOTFILES=.' >> ../.dotfile-env
+
+    - description: Installing vim-plug
+      command: "[ -f ../vim-install/autoload/plug.vim ] || curl -fLo ../vim-install/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+
+    - description: Installing vim plugins
+      command: "vim +PlugInstall +qa"

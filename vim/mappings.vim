@@ -1,4 +1,3 @@
-" Leader
 let mapleader = "\<Space>"
 
 " Fzf fuzzy finders
@@ -55,3 +54,16 @@ nmap <Leader>rf :w<CR>:TestFile<CR>
 nmap <Leader>rl :w<CR>:TestLast<CR>
 nmap <Leader>rn :w<CR>:TestNearest<CR>
 nmap <Leader>rv :w<CR>:TestVisit<CR>
+
+" Generic LSP intelligence
+" Plugin: coc
+nmap <silent> <Leader>ig <Plug>(coc-definition)
+nmap <silent> <Leader>iv :vsplit<CR><Plug>(coc-definition)
+nmap <silent> <Leader>it <Plug>(coc-type-definition)
+inoremap <silent><expr> <C-l> coc#refresh()
+
+" PHP intelligence
+" Plugin: phpactor
+autocmd FileType php nnoremap <buffer> <Leader>p :call phpactor#ContextMenu()<CR>
+autocmd FileType php nnoremap <buffer> <Leader>pi :call phpactor#UseAdd()<CR>
+autocmd FileType php nnoremap <buffer> <Leader>pt :call phpactor#Transform()<CR>
