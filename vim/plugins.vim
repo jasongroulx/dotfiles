@@ -37,6 +37,9 @@ Plug 'jiangmiao/auto-pairs'
 " Quoting/parenthesizing made simple
 Plug 'tpope/vim-surround'
 
+" Better . repeating
+Plug 'tpope/vim-repeat'
+
 " Perform all your vim insert mode completions with Tab
 Plug 'ervandew/supertab'
 

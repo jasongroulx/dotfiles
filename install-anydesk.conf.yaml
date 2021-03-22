@@ -8,15 +8,18 @@
 
 
 - create:
-    - ../vim-install
+    - ~/.jasongroulx
 
 - link:
-    ../vim-install/colors: vim/colors
+    ~/.jasongroulx/vim-install/colors: vim/colors
 
 - shell: 
 
     - description: Adding .env variable for vim config
-      command: [ -f ../.dotfile-env ] || touch ../.dotfile-env && echo 'export VIM_INSTALL=../vim-install' >> ../.dotfile-env && echo 'export DOTFILES=.' >> ../.dotfile-env
+      command: "[ -f ../.dotfile-env ] || touch ../.dotfile-env && echo \"export VIM_INSTALL=$(pwd)/../vim-install\" >> ../.dotfile-env && echo \"export DOTFILES=$(pwd)\" >> ../.dotfile-env"
+
+    - description: Source dotfile-env
+      command: "source ../.dotfile-env"
 
     - description: Installing vim-plug
       command: "[ -f ../vim-install/autoload/plug.vim ] || curl -fLo ../vim-install/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
