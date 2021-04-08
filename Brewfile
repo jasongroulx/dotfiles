@@ -17,6 +17,7 @@ brew 'node'
 brew 'yarn'
 brew 'vim'
 
+brew 'neovim', args: ['HEAD']
 cask 'keycastr'
 cask 'github'
 cask 'grammarly'

@@ -7,6 +7,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " HTML/CSS expand abbreviation magic
 Plug 'mattn/emmet-vim'
 
+" Improved Javascript indentation and syntax support
+Plug 'pangloss/vim-javascript'
+
+" React JSX syntax highlighting and indenting
+Plug 'mxw/vim-jsx'
+
 " Fzf fuzzy finder
 Plug '/usr/local/opt/fzf'
 
