@@ -147,3 +147,6 @@ so() {
   source ~/.zshrc
   echo 'Sourced zshrc'
 }
+
+# Load nvim with .jasongroulx config 
+alias jvim='nvim -u ~/.jasongroulx/vim/init.vim'
