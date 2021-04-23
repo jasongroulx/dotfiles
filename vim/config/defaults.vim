@@ -6,6 +6,8 @@
 packadd! matchit
 
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
+set nobackup
+set noswapfile
 set relativenumber
 set laststatus=2          " last window always has a statusline
 filetype indent on        " activates indenting for files
@@ -47,12 +49,6 @@ set background=dark
 colorscheme solarized
 set colorcolumn=80       " display a ruler at a specific line
 set t_Co=256              " enable 256-color mode.
-
-" remove the scroll bars in macvim
-set guioptions-=l
-set guioptions-=L
-set guioptions-=r
-set guioptions-=R
 
 " remove gui tabs
 set guioptions-=e

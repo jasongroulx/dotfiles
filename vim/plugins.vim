@@ -1,9 +1,6 @@
 " ------------------------------------------------------------------------------
 " # Installed Plugins
 " ------------------------------------------------------------------------------
-" LSP Client
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " HTML/CSS expand abbreviation magic
 Plug 'mattn/emmet-vim'
 
@@ -49,9 +46,6 @@ Plug 'tpope/vim-repeat'
 " Perform all your vim insert mode completions with Tab
 Plug 'ervandew/supertab'
 
-" Tailwind CSS IntelliSense
-Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
-
 " A Vim wrapper for running tests on different granularities.
 Plug 'vim-test/vim-test'
 
@@ -60,3 +54,18 @@ Plug 'tpope/vim-commentary'
 
 " PHP refactoring and introspection
 Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install'}
+
+" Find, Filter, Preview, Pick. All lua, all the time.
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
+" FZY style sorter that is compiled
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+
+" Configurations for the Nvim LSP client
+Plug 'neovim/nvim-lspconfig'
+
+" Completion engine
+Plug 'hrsh7th/nvim-compe'
+

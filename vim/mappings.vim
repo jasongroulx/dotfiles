@@ -1,24 +1,27 @@
 let mapleader = "\<Space>"
 
-" Fzf fuzzy finders
-nmap <Leader>f :GFiles<CR>
-nmap <Leader>F :Files<CR>
-nmap <Leader>m :GFiles?<CR>
-nmap <Leader>t :BTags<CR>
-nmap <Leader>T :Tags<CR>
-nmap <Leader>b :Buffers<CR>
-nmap <Leader>l :BLines<CR>
-nmap <Leader>L :Lines<CR>
-nmap <Leader>h :PHistory<CR>
-nmap <Leader>H :History<CR>
-nmap <Leader>: :History:<CR>
-nmap <Leader>M :Maps<CR>
-nmap <Leader>C :Commands<CR>
-nmap <Leader>' :Marks<CR>
-nmap <Leader>s :Filetypes<CR>
-nmap <Leader>S :Snippets<CR>
-nmap <Leader><Leader>h :Helptags!<CR>
 
+" Telescope fuzzy finders
+" Mappings: telescope
+nnoremap <Leader>f <Cmd>Telescope git_files<CR>
+nnoremap <Leader>F <Cmd>Telescope all_files<CR>
+nnoremap <Leader>b <Cmd>Telescope buffers sort_lastused=true<CR>
+nnoremap <Leader>m <Cmd>Telescope git_status<CR>
+nnoremap <Leader>h <Cmd>Telescope project_history<CR>
+nnoremap <Leader>H <Cmd>Telescope history<CR>
+" nnoremap <Leader>/ <Cmd>Telescope live_grep_raw<CR>
+nnoremap <Leader>t <Cmd>Telescope current_buffer_tags<CR>
+nnoremap <Leader>l <Cmd>Telescope current_buffer_lines<CR>
+nnoremap <Leader>C <Cmd>Telescope commands<CR>
+nnoremap <Leader>: <Cmd>Telescope command_history<CR>
+nnoremap <Leader>s <Cmd>Telescope filetypes<CR>
+" nnoremap <Leader> nnoremap <Leader>S <Cmd>Telescope ultisnips<CR>
+nnoremap <Leader><Leader>h <Cmd>Telescope help_tags<CR>
+nnoremap <Leader>v <Cmd>Telescope sourcery<CR>
+nnoremap <Leader><Leader>d <Cmd>Telescope dotfiles<CR>
+nnoremap <Leader><Leader>t <Cmd>Telescope<CR>
+
+" Ag search project
 " Mappings: agriculture
 nmap <Leader>/ <Plug>AgRawSearch
 vmap <Leader>/ <Plug>AgRawVisualSelection
@@ -55,12 +58,14 @@ nmap <Leader>rl :w<CR>:TestLast<CR>
 nmap <Leader>rn :w<CR>:TestNearest<CR>
 nmap <Leader>rv :w<CR>:TestVisit<CR>
 
-" Generic LSP intelligence
-" Mappings: coc
-nmap <silent> <Leader>ig <Plug>(coc-definition)
-nmap <silent> <Leader>iv :vsplit<CR><Plug>(coc-definition)
-nmap <silent> <Leader>it <Plug>(coc-type-definition)
-inoremap <silent><expr> <C-l> coc#refresh()
+" Mappings: lsp
+nnoremap <silent> <Leader>ie <Cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
+nnoremap <silent> <Leader>ig <Cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> <Leader>iv :vsplit<CR><Cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> <Leader>id <Cmd>lua vim.lsp.buf.declaration()<CR>
+nnoremap <silent> <Leader>ir <Cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent> <Leader>ii <Cmd>lua vim.lsp.buf.implementation()<CR>
+nnoremap <silent> K <Cmd>lua vim.lsp.buf.hover()<CR>
 
 " PHP intelligence
 " Mappings: phpactor

@@ -16,6 +16,7 @@ brew 'redis'
 brew 'node'
 brew 'yarn'
 brew 'vim'
+brew 'rg'
 
 brew 'neovim', args: ['HEAD']
 cask 'keycastr'

@@ -21,9 +21,9 @@
     - ~/Library/Application Support/Spectacle
 
 - link: 
-    ~/.vimrc: vim/vimrc
-    ~/.vim/coc-settings.json: vim/coc-settings.json
-    ~/.vim/colors: vim/colors
+    ~/.config/nvim/init.vim: vim/init.vim
+    ~/.config/nvim/coc-settings.json: vim/coc-settings.json
+    ~/.config/nvim/colors: vim/colors
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.zshrc: zshrc
@@ -31,8 +31,8 @@
     ~/Library/Application Support/Spectacle/Shortcuts.json: spectacle/Shortcuts.json
 
 - shell: 
-    - description: Adding .env variable for vim config
-      command: [ -f ~/.dotfile-env ] || touch ~/.dotfile-env && echo 'export VIM_INSTALL=~/.vim' >> ~/.dotfile-env && echo 'export DOTFILES=~/.dotfiles' >> ~/.dotfile-env
+    #- description: Adding .env variable for vim config
+    #  command: [ -f ~/.dotfile-env ] || touch ~/.dotfile-env && echo 'export VIM_INSTALL=~/.vim' >> ~/.dotfile-env && echo 'export DOTFILES=~/.dotfiles' >> ~/.dotfile-env
 
     - command: "[ -d ~/.oh-my-zsh ] || sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\" --silent --unattended --keep-zshrc"
       stdin: true

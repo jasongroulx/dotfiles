@@ -130,6 +130,8 @@ alias composer2="composer self-update --2 && composer --version"
 # Laravel Sail
 alias sail="./vendor/bin/sail"
 
+# Vim = Neovim
+alias vim="nvim"
 
 # Open vim with z argument
 v() {
@@ -137,7 +139,7 @@ v() {
     z $1
   fi
 
-  vim
+  nvim
 }
 
 # Compile bundles and source zshrc
