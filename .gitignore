@@ -1,2 +1,2 @@
 vim/portable/*
-!vim/portable/.gitkeep
+!vim/portable/plugin/plug.vim
