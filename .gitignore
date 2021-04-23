@@ -1,2 +1,2 @@
 vim/portable/*
-!vim/portable/plugin/plug.vim
+!vim/portable/autoload/plug.vim
