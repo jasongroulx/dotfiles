@@ -1,4 +1,4 @@
-#!/usr/local/bin/zsh
+#!/bin/zsh
 export MYVIMRC=~/.jasongroulx/vim/init.vim
 export VIMFILES=~/.jasongroulx/vim/portable
 export VIMDOTFILES=~/.jasongroulx/vim
