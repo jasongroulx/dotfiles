@@ -6,6 +6,7 @@ let g:sourcery#vim_dotfiles_path = exists('$VIMDOTFILES') ? $VIMDOTFILES : '~/.d
 let g:sourcery#system_vimfiles_path = exists('$VIMFILES') ? $VIMFILES : '~/.config/nvim'
 
 " This tells Vim to use our custom `jason-vim-install` path as our first runtime path, instead of .vim
+execute 'set runtimepath-='.stdpath('config')
 execute 'set runtimepath+='.g:sourcery#system_vimfiles_path
 
 " Source plugins
