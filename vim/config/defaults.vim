@@ -45,10 +45,6 @@ set clipboard=unnamed
 " ------------------------------------------------------------------------------
 " # Visuals
 " ------------------------------------------------------------------------------
-set background=dark
-colorscheme solarized
-set colorcolumn=80       " display a ruler at a specific line
-set t_Co=256              " enable 256-color mode.
 
 " remove gui tabs
 set guioptions-=e

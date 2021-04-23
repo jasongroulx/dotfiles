@@ -17,13 +17,11 @@
 
 - create:
     - ~/Code
-    - ~/.vim/colors
     - ~/Library/Application Support/Spectacle
 
 - link: 
     ~/.config/nvim/init.vim: vim/init.vim
     ~/.config/nvim/coc-settings.json: vim/coc-settings.json
-    ~/.config/nvim/colors: vim/colors
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.zshrc: zshrc

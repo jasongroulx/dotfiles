@@ -69,3 +69,6 @@ Plug 'neovim/nvim-lspconfig'
 " Completion engine
 Plug 'hrsh7th/nvim-compe'
 
+" Material colorscheme
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+
