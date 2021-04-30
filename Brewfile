@@ -15,10 +15,12 @@ brew 'composer'
 brew 'redis'
 brew 'node'
 brew 'yarn'
-brew 'vim'
 brew 'rg'
-
 brew 'neovim', args: ['HEAD']
+brew 'tmux'
+brew 'ctags'
+brew 'direnv'
+
 cask 'keycastr'
 cask 'github'
 cask 'grammarly'

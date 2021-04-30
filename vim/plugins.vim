@@ -72,3 +72,7 @@ Plug 'hrsh7th/nvim-compe'
 " Material colorscheme
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 
+" install UltiSnips
+Plug 'SirVer/ultisnips'
+Plug 'mlaursen/vim-react-snippets'
+

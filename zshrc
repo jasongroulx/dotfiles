@@ -100,6 +100,9 @@ source ~/.dotfile-env
 # Z Installation
 . `brew --prefix`/etc/profile.d/z.sh
 
+# direnv Installation
+eval "$(direnv hook zsh)"
+
 # MySQL
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 

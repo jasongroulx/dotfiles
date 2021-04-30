@@ -21,7 +21,7 @@
 
 - link: 
     ~/.config/nvim/init.vim: vim/init.vim
-    ~/.config/nvim/coc-settings.json: vim/coc-settings.json
+    ~/.tmux.conf: tmux.conf
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.zshrc: zshrc
