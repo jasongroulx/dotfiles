@@ -76,3 +76,5 @@ Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'SirVer/ultisnips'
 Plug 'mlaursen/vim-react-snippets'
 
+" Check syntax in Vim asynchronously and fix files
+Plug 'w0rp/ale'
