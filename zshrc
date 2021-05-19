@@ -106,6 +106,9 @@ eval "$(direnv hook zsh)"
 # MySQL
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
+#Brew
+export PATH="/usr/local/sbin:$PATH"
+
 # ------------------------------------------------------------------------------
 # Fzf Installer Generated Config
 # ------------------------------------------------------------------------------
@@ -150,3 +153,7 @@ so() {
   source ~/.zshrc
   echo 'Sourced zshrc'
 }
+
+# Google Cloud SDK
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
