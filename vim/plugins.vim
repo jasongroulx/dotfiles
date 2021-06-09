@@ -78,3 +78,7 @@ Plug 'mlaursen/vim-react-snippets'
 
 " Check syntax in Vim asynchronously and fix files
 Plug 'w0rp/ale'
+
+" Debugger Plugins
+Plug 'puremourning/vimspector'
+Plug 'szw/vim-maximizer'

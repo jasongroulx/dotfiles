@@ -20,6 +20,7 @@ brew 'neovim', args: ['HEAD']
 brew 'tmux'
 brew 'ctags'
 brew 'direnv'
+brew 'httpie'
 
 cask 'keycastr'
 cask 'github'
@@ -42,3 +43,4 @@ cask 'karabiner-elements'
 cask 'appcleaner'
 cask 'docker'
 cask 'google-cloud-sdk'
+cask 'postman'
