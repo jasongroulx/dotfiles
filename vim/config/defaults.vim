@@ -20,7 +20,7 @@ set expandtab             " use spaces instead of tabs
 set smarttab              " use tabs at the start of a line, spaces elsewhere
 set nowrap                " don't wrap text
 set showmatch             " highlight matching [{()}]
-set spell
+set nospell
 set autowriteall          " automatically write file when switching buffers.
 set complete=.,w,b,u      " Set our desired autocompletion matching.
 set completeopt=menu,menuone,noinsert,noselect " Auto complete menu options
@@ -50,6 +50,10 @@ set clipboard=unnamed
 set guioptions-=e
 set linespace=15
 set guifont=Monaco:h14
+
+" display a ruler at a specific line
+set colorcolumn=120
+
 
 " Flip colorscheme
 nmap <Leader>dt :set background=dark<cr>

@@ -14,7 +14,6 @@ highlight LspDiagnosticsDefaultHint ctermfg=blue
 let test#strategy = "neovim"
 
 
-
 " When using `dd` in the quickfix list, remove the item from the quickfix list.
 function! RemoveQFItem()
     let curqfidx = line('.') - 1
